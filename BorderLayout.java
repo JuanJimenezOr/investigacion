@@ -1,4 +1,6 @@
-public class BorderLayout{
+import javax.swing.JFrame;//teniamos que importar la libreria y extender la clase
+
+public class BorderLayout extends JFrame{
 	
 	public static void main(String ar[]){
 	 
