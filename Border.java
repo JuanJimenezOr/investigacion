@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 import java.awt.BorderLayout;//libreria necesaria para el Layout
-
+import javax.swing.JButton;//Libreria botones
 public class Border extends JFrame{
 
 
@@ -28,8 +28,9 @@ public class Border extends JFrame{
 		this.setVisible(true);	
 	}//ventana	
 	
-	public static void main(String ar[]) //Corrección del MAIN{
-		BorderLayout m = new  BorderLayout();
+	public static void main(String ar[]) //Corrección del MAIN
+	{
+		Border m = new  Border();
 		m.ventana();
 	
 	}//main
