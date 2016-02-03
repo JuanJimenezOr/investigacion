@@ -1,7 +1,7 @@
 import javax.swing.JFrame;
 import java.awt.BorderLayout;//libreria necesaria para el Layout
 
-public class BorderLayout extends JFrame{
+public class Border extends JFrame{
 
 
 	private void ventana(){
