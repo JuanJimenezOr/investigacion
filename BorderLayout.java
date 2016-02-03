@@ -4,8 +4,8 @@ import java.awt.BorderLayout;//libreria necesaria para el Layout
 public class BorderLayout extends JFrame{
 
 
-	private void ventana()//Lo del main va en esta función, la llamaré ventana
-	{
+	private void ventana(){
+
 		//tamaño de la ventana
         	 this.setBounds(10,40,350,280);
          	//creacion y establecimiento del gestor de organización
@@ -13,18 +13,23 @@ public class BorderLayout extends JFrame{
          	this.setLayout(bd);
 	
 		//Creacion de los controles
-		JButton button1 = new JButton("norte");	
-		JButton button2 = new JButton("sur");
-		JButton button3 = new JButton("oeste");
-		JButton button4 = new JButton("este");
-		JButton button5= new JButton("centro");
+		JButton btnNor = new JButton("Norte");	
+		JButton btnSur = new JButton("Sur");
+		JButton btnCen = new JButton("Centro");
+		JButton btnEast = new JButton("Este");
+		JButton btnWest= new JButton("Oeste");
+		
+		//Asignacion de controles a las areas correspondientes
+		this.add(btnNor, BorderLayout.NORTH);
+		this.add(btnSur, BorderLayout.SOUTH);
+		this.add(btnEast, BorderLayout.EAST);
+		this.add(btnWest, BorderLayout.WEST);
+		this.add(btnCen, BorderLayout.CENTER);
+		this.setVisible(true);	
+	}//ventana	
 	
-	}	
-	
-	public static void main(String ar[]) //Corrección del MAIN
-	{
+	public static void main(String ar[]) //Corrección del MAIN{
 		BorderLayout m = new  BorderLayout();
-		m.BorderLayout();
 		m.ventana();
 	
 	}//main
