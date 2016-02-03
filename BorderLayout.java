@@ -11,13 +11,21 @@ public class BorderLayout extends JFrame{
          	//creacion y establecimiento del gestor de organización
          	BorderLayout bd = new BorderLayout();
          	this.setLayout(bd);
-		
-	}
 	
-	public static void main(String ar[])
+		//Creacion de los controles
+		JButton button1 = new JButton("norte");	
+		JButton button2 = new JButton("sur");
+		JButton button3 = new JButton("oeste");
+		JButton button4 = new JButton("este");
+		JButton button5= new JButton("centro");
+	
+	}	
+	
+	public static void main(String ar[]) //Corrección del MAIN
 	{
-		BorderLayout = m BorderLayout();
+		BorderLayout m = new  BorderLayout();
 		m.BorderLayout();
+		m.ventana();
 	
 	}//main
 }//class
